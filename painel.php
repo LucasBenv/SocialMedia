@@ -26,9 +26,9 @@
         </div>  
 
         <div class="right">
-                <div class="box-chat">
+                <div class="container">
                     <div class="titulo">Titulo do Chat</div>
-                    <div class="chat">
+                    <div class="chat-box">
                         <div class="msg-box-in">
                             <div class="msg-texto-in">
                                 <h4>Lucas</h4>

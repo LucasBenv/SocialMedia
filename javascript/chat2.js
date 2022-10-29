@@ -1,5 +1,5 @@
 const form = document.querySelector('.form-envio');
-const chat = document.querySelector('.chat');
+const chat = document.querySelector('.chat-box');
 const btnEnviar = document.querySelector('.btn-enviar');
 const textarea = document.querySelector('textarea');
 
@@ -13,11 +13,9 @@ btnEnviar.onclick = ()=>{
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
-              if(xhr.status === 200){
-                textarea.value = "";
-                console.log(xhr.response)
-                //scrollToBottom();
-              }
+              textarea.value = "";
+              console.log(xhr.response)
+              scrollToBottom();
           }
       }
     }
