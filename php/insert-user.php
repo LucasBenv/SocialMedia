@@ -32,7 +32,7 @@
             if ($mysqli->query($sql_code) === TRUE) {
                 echo "success";
             } else{
-                echo "Error";
+                echo "Erro";
             }
         }
     }

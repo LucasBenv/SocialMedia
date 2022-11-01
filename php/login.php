@@ -5,11 +5,10 @@
     $senha = $mysqli->real_escape_string($_POST['senha']);
 
     if (isset($_POST['usuario']) || isset($_POST['senha'])) {
-    
         if (strlen($_POST['usuario']) == 0) {
-            echo 'Usuario ou senha errados';
-        } if(strlen($_POST['senha']) == 0) { 
-            echo 'Usuario ou senha errados';
+            echo 'Preencha o Usuario';
+        } else if(strlen($_POST['senha']) == 0) { 
+            echo 'Preencha a Senha';
         } else {
             $sql_code = "select * from usuarios where usuario = '$usuario' and senha = '$senha'";
             $sql_query = $mysqli->query($sql_code) or die("Falha na execução do select");
@@ -27,7 +26,7 @@
                 echo 'success';
 
             } else{
-                echo 'Falha ao logar!';
+                echo 'Usuario ou senha errada!';
             }
         }
     }
