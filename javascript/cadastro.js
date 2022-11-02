@@ -13,9 +13,9 @@ btncadastro.onclick = ()=>{
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.response === 'success'){
-            alert("Usuario cadastrado com sucesso");
             p.textContent = "";
             limparCampos();
+            alert("Usuario cadastrado com sucesso");
           }else{
             p.textContent = xhr.response;
           }

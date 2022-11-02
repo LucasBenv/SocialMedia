@@ -61,6 +61,11 @@ body * {
     margin: 0;
 }
 
+.card-cadastro .error-msg {
+    color: red;
+    font-size: 12px;
+}
+
 .textfield{
     width: 100%;
     display: flex;
@@ -108,11 +113,11 @@ body * {
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-p {
+.card-cadastro p {
     color: #f0ffffde;
     margin-top: 0%;
 }
-a{
+.card-cadastro a{
     color: #5568FE;
     text-decoration: none;
     white-space: nowrap;

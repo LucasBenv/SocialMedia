@@ -23,6 +23,7 @@
         <div class="right-cadastro">
             <form class="card-cadastro" method="POST" action="#">
                 <h1>Cadastro</h1>
+                <p class="error-msg"></p>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário">
@@ -36,7 +37,7 @@
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
                 <button type="submit" class="btn-cadastrar">Cadastrar</button>
-                <p>Já tem uma conta? <a href="index.html">Entrar em uma conta</a></p>
+                <p>Já tem uma conta? <a href="index.php">Entrar em uma conta</a></p>
             </form>
 
         </div>
